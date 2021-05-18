@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Fortest">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".btn_help_2"></activity>
+        <activity android:name=".btn_help_1" />
+        <activity android:name=".my.frag_my_btn1" />
+        <activity android:name=".community.frag_com_btn_1_1_3" />
+        <activity android:name=".community.frag_com_btn_1_1_2" />
+        <activity android:name=".community.frag_com_btn_1_1_1" />
+        <activity android:name=".community.frag_com_btn3_1" />
+        <activity android:name=".community.frag_com_btn2_1" />
+        <activity android:name=".community.frag_com_btn1_1" />
+        <activity android:name=".my.frag_my_btn1_1" />
+        <activity android:name=".login.Register" />
+        <activity android:name=".login.login" />
+        <activity android:name=".Homepage.frag_home_btn6_1" />
+        <activity android:name=".Homepage.frag_home_btn5_1" />
+        <activity android:name=".Homepage.frag_home_btn4_1" />
+        <activity android:name=".Homepage.frag_home_btn3_1" />
+        <activity android:name=".Homepage.frag_home_btn2_1" />
+        <activity android:name=".Homepage.frag_home_person" />
+        <activity android:name=".HomePagefragment" />
+        <activity android:name=".Communityfragment" />
+        <activity android:name=".Connectfragment" />
+        <activity android:name=".MyFragment" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

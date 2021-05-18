@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_1"
+            android:layout_width="253dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_bg_greener"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="661dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ly_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/text_white">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_chwu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的宠物" />
+
+    </LinearLayout>
+
+</LinearLayout>

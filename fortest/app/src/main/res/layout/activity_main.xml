@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/ly_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_deal"
+                    style="@style/tab_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="63dp"
+                    android:drawableTop="@drawable/tab_menu_deal_collect"
+                    android:text="首页" />
+
+                <TextView
+                    android:id="@+id/tab_menu_deal_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tab_menu_deal"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_poi"
+                    style="@style/tab_menu_text"
+                    android:layout_width="76dp"
+                    android:layout_height="58dp"
+                    android:drawableTop="@drawable/tab_menu_deal_shop"
+                    android:text="社区" />
+
+                <TextView
+                    android:id="@+id/tab_menu_poi_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tab_menu_poi"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_more"
+                    style="@style/tab_menu_text"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:drawableTop="@drawable/tab_menu_deal_more"
+                    android:text="对话" />
+
+                <TextView
+                    android:id="@+id/tab_menu_more_num"
+                    style="@style/tab_menu_bgnum"
+                    android:layout_toRightOf="@+id/tab_menu_more"
+                    android:text="99+"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tab_menu_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tab_menu_user"
+                    style="@style/tab_menu_text"
+                    android:layout_width="69dp"
+                    android:layout_height="65dp"
+                    android:drawableTop="@drawable/tab_menu_deal_user"
+                    android:text="我的" />
+
+                <ImageView
+                    android:id="@+id/tab_menu_setting_partner"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@id/tab_menu_user"
+                    android:src="@mipmap/partner_red"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_menu"
+        android:background="@color/text_gray" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
+        android:layout_above="@id/div_tab_bar"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/text_white"
+        android:gravity="center" />
+
+</RelativeLayout>
+
+
