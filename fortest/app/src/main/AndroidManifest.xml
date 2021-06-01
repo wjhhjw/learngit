@@ -13,6 +13,7 @@
         <activity android:name=".btn_help_2"></activity>
         <activity android:name=".btn_help_1" />
         <activity android:name=".my.frag_my_btn1" />
+        <activity android:name=".activity_test"/>
         <activity android:name=".community.frag_com_btn_1_1_3" />
         <activity android:name=".community.frag_com_btn_1_1_2" />
         <activity android:name=".community.frag_com_btn_1_1_1" />
