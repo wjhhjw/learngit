@@ -53,11 +53,13 @@ public class HomePagefragment extends Fragment implements View.OnClickListener{
         btn_four.setOnClickListener(this);
         btn_five.setOnClickListener(this);
         btn_six.setOnClickListener(this);
+        btn_loginout.setOnClickListener(this);
         return view;  //返回该布局文件对应的view文件， 表示该fragment会显示该view文件
     }
 
   @Override
     public void onClick(View v) {
+      Intent intent=new Intent();
       switch (v.getId()) {
           case R.id.home_btn_1:
               getFragmentManager().beginTransaction().replace(R.id.fragment_container, frag_home_person).commit();
@@ -80,14 +82,22 @@ public class HomePagefragment extends Fragment implements View.OnClickListener{
           case R.id.bt_main_logout:
           {
               //todo  实现结束fragment并退回登陆页面
-              Register._id=null;
-              login._id=null;
-              getActivity().onBackPressed();//销毁自己
-              onDestroy();
+//              Register._id=null;
+//              login._id=null;
+//              getActivity().onBackPressed();//销毁自己
+//              onDestroy();
+
+
+              intent.setClass(getActivity(),login.class);
+              startActivity(intent);
+              this.onDestroy();
+
               break;
           }
 
       }
+
+
     }
 
 
